@@ -16,10 +16,14 @@ class AppFonctions{
             children: [
               Icon(Icons.error, color: Colors.white),
               SizedBox(width: 20),
-              Text(
-                textAlign: TextAlign.center,
-                message,
-                style: TextStyle(fontFamily: "Inika", fontSize: 16,),
+              Flexible(
+                child: FittedBox(
+                  child: Text(
+                    textAlign: TextAlign.center,
+                    message,
+                    style: TextStyle(fontFamily: "Inika", fontSize: 16),
+                  ),
+                ),
               ),
             ],
           ),
